@@ -1,0 +1,134 @@
+//边距以及高度适配
+
+/*
+    #公共的padding/margin/width/height/line-height数值
+    #
+        l代表left,
+        r代表right,
+        t代表top,
+        b代表bottom,
+        a代表all,
+        w代表width,
+        h代表height
+        lh代表line-height
+    #
+    #480以上的数值请自理
+*/
+
+// .loop(@i) when (@i > 0) {
+//     .G-pd-l-@{i}{
+//         padding-left:  ~"@{i}rpx";
+//     }
+//     .loop(@i - 1);
+// }
+// .loop(20);
+// @ratio: 1/2;
+// @media only screen and (max-width: 359rpx) {
+//     @ratio: 0.88888888/2;
+// }
+@ratio: 1;
+
+.G-pd-l(@i) {
+    @n: @i*@ratio;
+    padding-left :~"@{n}rpx";
+}
+
+.G-pd-r(@i) {
+    @n: @i*@ratio;
+    padding-right :~"@{n}rpx";
+}
+
+.G-pd-t(@i) {
+    @n: @i*@ratio;
+    padding-top :~"@{n}rpx";
+}
+
+.G-pd-b(@i) {
+    @n: @i*@ratio;
+    padding-bottom :~"@{n}rpx";
+}
+
+.G-pd-a(@i) {
+    @n: @i*@ratio;
+    padding :~"@{n}rpx";
+}
+
+.G-mg-l(@i) {
+    @n: @i*@ratio;
+    margin-left :~"@{n}rpx";
+}
+
+.G-mg-r(@i) {
+    @n: @i*@ratio;
+    margin-right :~"@{n}rpx";
+}
+
+.G-mg-t(@i) {
+    @n: @i*@ratio;
+    margin-top :~"@{n}rpx";
+}
+
+.G-mg-b(@i) {
+    @n: @i*@ratio;
+    margin-bottom :~"@{n}rpx";
+}
+
+.G-mg-a(@i) {
+    @n: @i*@ratio;
+    margin :~"@{n}rpx";
+}
+
+.G-w(@i) {
+    @n: @i*@ratio;
+    width :~"@{n}rpx";
+}
+
+.G-h(@i) {
+    @n: @i*@ratio;
+    height :~"@{n}rpx";
+}
+
+.G-lh(@i) {
+    @n: @i*@ratio;
+    line-height :~"@{n}rpx";
+}
+
+.G-top(@i) {
+    @n: @i*@ratio;
+    top :~"@{n}rpx";
+}
+
+.G-bottom(@i) {
+    @n: @i*@ratio;
+    bottom :~"@{n}rpx";
+}
+
+.G-left(@i) {
+    @n: @i*@ratio;
+    left :~"@{n}rpx";
+}
+
+.G-right(@i) {
+    @n: @i*@ratio;
+    right :~"@{n}rpx";
+}
+
+.G-max-w(@i) {
+    @n: @i*@ratio;
+    max-width:~"@{n}rpx";
+}
+
+.G-min-w(@i) {
+    @n: @i*@ratio;
+    min-width:~"@{n}rpx";
+}
+
+.G-max-h(@i) {
+    @n: @i*@ratio;
+    max-height:~"@{n}rpx";
+}
+
+.G-min-h(@i) {
+    @n: @i*@ratio;
+    min-height:~"@{n}rpx";
+}

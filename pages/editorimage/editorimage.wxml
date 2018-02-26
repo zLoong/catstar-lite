@@ -1,0 +1,54 @@
+<view class="wx-editorimage">
+    <div class="wx-editor--header">
+        <div class="inner">
+            <div class="back"></div>
+            <div class="title">喵喵星球</div>
+        </div>
+    </div>
+    <div class="wx-editorimage-wrap hidden">
+        <div class="wx-editorimage--list">
+            <image class="item active" src="http://res.imtt.qq.com/tagapp/DTLite/cat.png"></image>
+            <image class="item" src="http://res.imtt.qq.com/tagapp/DTLite/cat.png"></image>
+            <image class="item" src="http://res.imtt.qq.com/tagapp/DTLite/cat.png"></image>
+        </div>
+        <div class="wx-editorimage--content">
+            <image mode="widthFix" src="http://res.imtt.qq.com/tagapp/DTLite/cat.png"></image>
+        </div>
+        <div class="wx-editorimage--footer">
+            <div class="fl">
+                <div class="cut"></div>
+                <div class="font"></div>
+            </div>
+            <div class="fr">
+                <button class="btn" bindtap="gotoEditor">完成编辑</button>
+            </div>
+        </div>
+    </div>
+    <div class="wx-editorimage--cut">
+        <div class="wx-cut-mask"></div>
+        <div class="wx-cut--content">
+            <image mode="widthFix" src="http://res.imtt.qq.com/tagapp/img/loong/video/16.jpg"></image>
+
+
+            <ul class="wx-cut-area">
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+
+        </div>
+        <div class="wx-editorimage--footer">
+            <div class="fr">
+                <button class="btn" bindtap="gotoEditor">完成</button>
+            </div>
+        </div>
+    </div>
+</view>

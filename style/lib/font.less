@@ -1,0 +1,14 @@
+// @sd: 8;
+// @ratio: 1/2;
+// @media only screen and (max-width: 359px) {
+//     @ratio: 0.88888888/2;
+// }
+// .G-font(@i) {
+//     @s: @i*@ratio;
+//     font-size :~"@{s}rpx";
+// }
+@ratio: 1;
+.G-font(@i) {
+    @s: @i*@ratio;
+    font-size :~"@{s}rpx";
+}

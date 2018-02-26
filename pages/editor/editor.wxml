@@ -1,0 +1,27 @@
+<view class="wx-editor">
+    <div class="wx-editor--header">
+        <div class="inner">
+            <div class="back"></div>
+            <div class="title">喵喵星球</div>
+        </div>
+    </div>
+    <div class="wx-editor--contain">
+        <input class="contain-title" placeholder="编辑萌照标题..." />
+        <label for="title" class="contain-date">01-11</label>
+        <textarea name="editor" id="editor" class="contain-editor" placeholder="编辑萌照内容..."></textarea>
+        <div class="contain-images" wx:for="{{imgList}}" wx:key="this" wx:for-index="index">
+            <image id="{{index}}" bindtouchstart='imageTouchStart' bindtouchend='imageTouchEnd' bindtouchmove="imageTouchMove" class="{{item.class}}"
+                mode="widthFix" src="{{item.src}}" style="transform:translate({{item.positionX}}px,{{item.positionY}}px);"></image>
+        </div>
+        <div class="add-image-box" bindtap='chooseImgs'>
+            <label class="add-icon">添加萌照</label>
+        </div>
+        <button class="publish-btn" bindtap="gotoEditorImage">发布萌照</button>
+        <block wx:if="{{dragStart}}">
+            <div class="recycle-bar">
+                <label class="icon"></label>
+                <label class="txt">拖到这里删除萌照</label>
+            </div>
+        </block>
+    </div>
+</view>

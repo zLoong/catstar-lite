@@ -372,9 +372,6 @@ button {
   background: #ffc345!important;
   border-radius: 56rpx;
 }
-.wx-editorimage--cut {
-  width: 100%;
-}
 .wx-editorimage--cut .wx-cut-mask {
   width: 1000%;
   height: 1000%;
@@ -497,9 +494,140 @@ button {
   height: 76rpx;
   width: 20rpx;
 }
-.wx-editorimage--cut .wx-editorimage--footer {
+.wx-editorimage--cut,
+.wx-editorimage--font {
+  width: 100%;
+}
+.wx-editorimage--cut .wx-editorimage--footer,
+.wx-editorimage--font .wx-editorimage--footer {
   justify-content: flex-end;
 }
-.wx-editorimage--cut .wx-editorimage--footer .fr .btn {
+.wx-editorimage--cut .wx-editorimage--footer .fr .btn,
+.wx-editorimage--font .wx-editorimage--footer .fr .btn {
   width: 128rpx;
+}
+.wx-editorimage--font .wx-font--content {
+  margin-left: 80rpx;
+  margin-right: 80rpx;
+  margin-top: 194rpx;
+  position: relative;
+}
+.wx-editorimage--font .wx-font--content image {
+  width: 100%;
+  height: auto;
+}
+.wx-editorimage--font .wx-font--content .desc-box {
+  position: absolute;
+  z-index: 6;
+  left: 10px;
+  top: 30px;
+  width: auto;
+  font-size: 54rpx;
+  border: 1px solid #f5f3f1;
+}
+.wx-editorimage--font .wx-font--content .desc-box::after,
+.wx-editorimage--font .wx-font--content .desc-box::before {
+  content: '';
+  position: absolute;
+  width: 8rpx;
+  height: 8rpx;
+  background: #f5f3f1;
+}
+.wx-editorimage--font .wx-font--content .desc-box::after {
+  top: -4rpx;
+  left: -4rpx;
+}
+.wx-editorimage--font .wx-font--content .desc-box::before {
+  bottom: -4rpx;
+  left: -4rpx;
+}
+.wx-editorimage--font .wx-font--content .desc-box .img-desc {
+  color: #ff000c;
+  position: relative;
+}
+.wx-editorimage--font .wx-font--content .desc-box .img-desc::after,
+.wx-editorimage--font .wx-font--content .desc-box .img-desc::before {
+  content: '';
+  position: absolute;
+  width: 8rpx;
+  height: 8rpx;
+  background: #f5f3f1;
+}
+.wx-editorimage--font .wx-font--content .desc-box .img-desc::after {
+  top: -4rpx;
+  right: -4rpx;
+}
+.wx-editorimage--font .wx-font--content .desc-box .img-desc::before {
+  bottom: -4rpx;
+  right: -4rpx;
+}
+.wx-editorimage--font .wx-font--input {
+  width: 100%;
+  height: 210rpx;
+  bottom: 100rpx;
+  background: #FFF;
+  position: fixed;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+  box-shadow: 0 -1px 1px #cccdce;
+}
+.wx-editorimage--font .wx-font--input .color-list {
+  width: 100%;
+  height: 90rpx;
+  border-top-right-radius: 24px;
+  border-top-left-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wx-editorimage--font .wx-font--input .color-list li {
+  width: 50rpx;
+  height: 50rpx;
+  margin-right: 16rpx;
+  border-radius: 50%;
+}
+.wx-editorimage--font .wx-font--input .color-list li.white {
+  background: white;
+  border: 1px solid #d7d7d7;
+}
+.wx-editorimage--font .wx-font--input .color-list li.gray {
+  background: #939393;
+}
+.wx-editorimage--font .wx-font--input .color-list li.black {
+  background: #000;
+}
+.wx-editorimage--font .wx-font--input .color-list li.red {
+  background: #ff000c;
+}
+.wx-editorimage--font .wx-font--input .color-list li.orange {
+  background: #ff9c00;
+}
+.wx-editorimage--font .wx-font--input .color-list li.yellow {
+  background: #fff719;
+}
+.wx-editorimage--font .wx-font--input .color-list li.green {
+  background: #17e812;
+}
+.wx-editorimage--font .wx-font--input .color-list li.cyan {
+  background: #0be1f4;
+}
+.wx-editorimage--font .wx-font--input .color-list li.blue {
+  background: #177df0;
+}
+.wx-editorimage--font .wx-font--input .color-list li.violet {
+  background: #bd11ef;
+}
+.wx-editorimage--font .wx-font--input .color-list li.active {
+  border: 6rpx solid #000;
+}
+.wx-editorimage--font .wx-font--input .input-txt {
+  background: #f2f2f2;
+  margin-left: 44rpx;
+  margin-right: 44rpx;
+  height: 76rpx;
+  line-height: 76rpx;
+  font-size: 32rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+  border-radius: 32px;
 }

@@ -119,7 +119,6 @@
         }
     }
     &--cut {
-        width: 100%;
         .wx-cut-mask {
             width: 1000%;
             height: 1000%;
@@ -246,12 +245,143 @@
                 }
             }
         }
+    }
+    &--cut,
+    &--font {
+        width: 100%;
         .wx-editorimage--footer {
             justify-content: flex-end;
             .fr {
                 .btn {
                     .G-w(128);
                 }
+            }
+        }
+    }
+    &--font {
+        .wx-font--content {
+            .G-mg-l(80);
+            .G-mg-r(80);
+            .G-mg-t(194);
+            position: relative;
+            image {
+                width: 100%;
+                height: auto;
+            }
+            .desc-box {
+                position: absolute;
+                z-index: 6;
+                left: 10px;
+                top: 30px;
+                width: auto;
+                .G-font(54);
+                border: 1px solid #f5f3f1;
+                &::after,
+                &::before {
+                    content: '';
+                    position: absolute;
+                    .G-w(8);
+                    .G-h(8);
+                    background: #f5f3f1;
+                }
+                &::after {
+                    .G-top(-4);
+                    .G-left(-4);
+                }
+                &::before {
+                    .G-bottom(-4);
+                    .G-left(-4);
+                }
+                .img-desc {
+                    color: #ff000c;
+                    position: relative;
+                    &::after,
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        .G-w(8);
+                        .G-h(8);
+                        background: #f5f3f1;
+                    }
+                    &::after {
+                        .G-top(-4);
+                        .G-right(-4);
+                    }
+                    &::before {
+                        .G-bottom(-4);
+                        .G-right(-4);
+                    }
+                }
+            }
+        }
+        .wx-font--input {
+            width: 100%;
+            .G-h(210);
+            .G-bottom(100);
+            background: #FFF;
+            position: fixed;
+            border-top-right-radius: 24px;
+            border-top-left-radius: 24px;
+            box-shadow: 0 -1px 1px #cccdce;
+            .color-list {
+                width: 100%;
+                .G-h(90);
+                border-top-right-radius: 24px;
+                border-top-left-radius: 24px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                li {
+                    .G-w(50);
+                    .G-h(50);
+                    .G-mg-r(16);
+                    border-radius: 50%;
+                    &.white {
+                        background: white;
+                        border: 1px solid #d7d7d7;
+                    }
+                    &.gray {
+                        background: #939393;
+                    }
+                    &.black {
+                        background: #000;
+                    }
+                    &.red {
+                        background: #ff000c;
+                    }
+                    &.orange {
+                        background: #ff9c00;
+                    }
+                    &.yellow {
+                        background: #fff719;
+                    }
+                    &.green {
+                        background: #17e812;
+                    }
+                    &.cyan {
+                        background: #0be1f4;
+                    }
+                    &.blue {
+                        background: #177df0;
+                    }
+                    &.violet {
+                        background: #bd11ef;
+                    }
+                    &.active {
+                        border: 6rpx solid #000;
+                    }
+                }
+            }
+            .input-txt {
+                background: #f2f2f2;
+                .G-mg-l(44);
+                .G-mg-r(44);
+                .G-h(76);
+                .G-lh(76);
+                .G-font(32);
+                .G-pd-l(30);
+                .G-pd-r(30);
+                border-radius: 32px;
             }
         }
     }

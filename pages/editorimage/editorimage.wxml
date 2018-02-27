@@ -24,26 +24,49 @@
             </div>
         </div>
     </div>
-    <div class="wx-editorimage--cut">
+    <div class="wx-editorimage--cut hidden">
         <div class="wx-cut-mask"></div>
         <div class="wx-cut--content">
-            <image mode="widthFix" src="http://res.imtt.qq.com/tagapp/img/loong/video/16.jpg"></image>
-
-
+            <image mode="widthFix" src="http://res.imtt.qq.com/tagapp/img/loong/video/106.jpg"></image>
             <ul class="wx-cut-area">
                 <li></li>
                 <li></li>
                 <li></li>
-
                 <li></li>
                 <li></li>
                 <li></li>
-
                 <li></li>
                 <li></li>
                 <li></li>
             </ul>
-
+        </div>
+        <div class="wx-editorimage--footer">
+            <div class="fr">
+                <button class="btn" bindtap="gotoEditor">完成</button>
+            </div>
+        </div>
+    </div>
+    <div class="wx-editorimage--font">
+        <div class="wx-font--content">
+            <image mode="widthFix" src="http://res.imtt.qq.com/tagapp/img/loong/video/106.jpg"></image>
+            <div class="desc-box">
+                <label class="img-desc">你好可爱-喜欢你-爱你</label>
+            </div>
+        </div>
+        <div class="wx-font--input">
+            <ul class="color-list">
+                <li class="white"></li>
+                <li class="gray"></li>
+                <li class="black"></li>
+                <li class="red active"></li>
+                <li class="orange"></li>
+                <li class="yellow"></li>
+                <li class="green"></li>
+                <li class="cyan"></li>
+                <li class="blue"></li>
+                <li class="violet"></li>
+            </ul>
+            <input class="input-txt" type="text" placeholder="输入你想说的话..." />
         </div>
         <div class="wx-editorimage--footer">
             <div class="fr">
